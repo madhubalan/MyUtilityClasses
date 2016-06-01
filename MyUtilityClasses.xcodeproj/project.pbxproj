@@ -15,6 +15,11 @@
 		E1562D621CFF03EE0037ADEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1562D601CFF03EE0037ADEA /* LaunchScreen.storyboard */; };
 		E1562D6D1CFF03EE0037ADEA /* MyUtilityClassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1562D6C1CFF03EE0037ADEA /* MyUtilityClassesTests.swift */; };
 		E1562D781CFF03EE0037ADEA /* MyUtilityClassesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1562D771CFF03EE0037ADEA /* MyUtilityClassesUITests.swift */; };
+		E1562D8A1CFF03FD0037ADEA /* MUC_AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1562D851CFF03FD0037ADEA /* MUC_AlertView.swift */; };
+		E1562D8B1CFF03FD0037ADEA /* MUC_Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1562D861CFF03FD0037ADEA /* MUC_Color.swift */; };
+		E1562D8C1CFF03FD0037ADEA /* MUC_Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1562D871CFF03FD0037ADEA /* MUC_Device.swift */; };
+		E1562D8D1CFF03FD0037ADEA /* MUC_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1562D881CFF03FD0037ADEA /* MUC_Label.swift */; };
+		E1562D8E1CFF03FD0037ADEA /* MUC_Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1562D891CFF03FD0037ADEA /* MUC_Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		E1562D731CFF03EE0037ADEA /* MyUtilityClassesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyUtilityClassesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1562D771CFF03EE0037ADEA /* MyUtilityClassesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUtilityClassesUITests.swift; sourceTree = "<group>"; };
 		E1562D791CFF03EE0037ADEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1562D851CFF03FD0037ADEA /* MUC_AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUC_AlertView.swift; sourceTree = "<group>"; };
+		E1562D861CFF03FD0037ADEA /* MUC_Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUC_Color.swift; sourceTree = "<group>"; };
+		E1562D871CFF03FD0037ADEA /* MUC_Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUC_Device.swift; sourceTree = "<group>"; };
+		E1562D881CFF03FD0037ADEA /* MUC_Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUC_Label.swift; sourceTree = "<group>"; };
+		E1562D891CFF03FD0037ADEA /* MUC_Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUC_Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,8 @@
 		E1562D531CFF03EE0037ADEA /* MyUtilityClasses */ = {
 			isa = PBXGroup;
 			children = (
-				E1562D541CFF03EE0037ADEA /* AppDelegate.swift */,
-				E1562D561CFF03EE0037ADEA /* ViewController.swift */,
-				E1562D581CFF03EE0037ADEA /* Main.storyboard */,
-				E1562D5E1CFF03EE0037ADEA /* Assets.xcassets */,
-				E1562D601CFF03EE0037ADEA /* LaunchScreen.storyboard */,
-				E1562D631CFF03EE0037ADEA /* Info.plist */,
-				E1562D5B1CFF03EE0037ADEA /* MyUtilityClasses.xcdatamodeld */,
+				E1562D961CFF048D0037ADEA /* Model */,
+				E1562D8F1CFF04390037ADEA /* Suporting Files */,
 			);
 			path = MyUtilityClasses;
 			sourceTree = "<group>";
@@ -126,6 +131,80 @@
 				E1562D791CFF03EE0037ADEA /* Info.plist */,
 			);
 			path = MyUtilityClassesUITests;
+			sourceTree = "<group>";
+		};
+		E1562D8F1CFF04390037ADEA /* Suporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1562D541CFF03EE0037ADEA /* AppDelegate.swift */,
+				E1562D561CFF03EE0037ADEA /* ViewController.swift */,
+				E1562D901CFF04430037ADEA /* Storyboard */,
+				E1562D5E1CFF03EE0037ADEA /* Assets.xcassets */,
+				E1562D601CFF03EE0037ADEA /* LaunchScreen.storyboard */,
+				E1562D631CFF03EE0037ADEA /* Info.plist */,
+				E1562D5B1CFF03EE0037ADEA /* MyUtilityClasses.xcdatamodeld */,
+			);
+			name = "Suporting Files";
+			sourceTree = "<group>";
+		};
+		E1562D901CFF04430037ADEA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E1562D581CFF03EE0037ADEA /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		E1562D911CFF045C0037ADEA /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				E1562D851CFF03FD0037ADEA /* MUC_AlertView.swift */,
+			);
+			name = AlertView;
+			sourceTree = "<group>";
+		};
+		E1562D921CFF04660037ADEA /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				E1562D861CFF03FD0037ADEA /* MUC_Color.swift */,
+			);
+			name = Color;
+			sourceTree = "<group>";
+		};
+		E1562D931CFF046A0037ADEA /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				E1562D871CFF03FD0037ADEA /* MUC_Device.swift */,
+			);
+			name = Device;
+			sourceTree = "<group>";
+		};
+		E1562D941CFF04700037ADEA /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				E1562D881CFF03FD0037ADEA /* MUC_Label.swift */,
+			);
+			name = Label;
+			sourceTree = "<group>";
+		};
+		E1562D951CFF04830037ADEA /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				E1562D891CFF03FD0037ADEA /* MUC_Date.swift */,
+			);
+			name = Date;
+			sourceTree = "<group>";
+		};
+		E1562D961CFF048D0037ADEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1562D911CFF045C0037ADEA /* AlertView */,
+				E1562D921CFF04660037ADEA /* Color */,
+				E1562D931CFF046A0037ADEA /* Device */,
+				E1562D941CFF04700037ADEA /* Label */,
+				E1562D951CFF04830037ADEA /* Date */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +338,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1562D8D1CFF03FD0037ADEA /* MUC_Label.swift in Sources */,
 				E1562D571CFF03EE0037ADEA /* ViewController.swift in Sources */,
+				E1562D8C1CFF03FD0037ADEA /* MUC_Device.swift in Sources */,
+				E1562D8E1CFF03FD0037ADEA /* MUC_Date.swift in Sources */,
+				E1562D8B1CFF03FD0037ADEA /* MUC_Color.swift in Sources */,
+				E1562D8A1CFF03FD0037ADEA /* MUC_AlertView.swift in Sources */,
 				E1562D5D1CFF03EE0037ADEA /* MyUtilityClasses.xcdatamodeld in Sources */,
 				E1562D551CFF03EE0037ADEA /* AppDelegate.swift in Sources */,
 			);
